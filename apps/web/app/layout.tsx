@@ -22,33 +22,74 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://dal-interior.vercel.app"),
+
   title: {
     default: "D'AL Interior",
     template: "%s | D'AL Interior",
   },
 
   description:
-    "D'AL Interior menyediakan gorden premium, blinds, wallpaper, karpet, dan solusi interior untuk rumah, hotel, kantor, serta rumah sakit.",
+    "D'AL Interior menyediakan gorden premium, blinds, wallpaper, karpet, dan solusi interior untuk rumah, hotel, kantor, rumah sakit, serta berbagai kebutuhan interior berkualitas di Bandung.",
 
   keywords: [
     "gorden Bandung",
     "gorden premium",
     "roller blind",
+    "vertical blind",
+    "roman shade",
+    "venetian blind",
     "hospital curtain",
+    "gorden rumah sakit",
+    "wallpaper",
+    "karpet",
     "interior Bandung",
+    "D'AL Interior",
   ],
+
+  alternates: {
+    canonical: "/",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
 
   openGraph: {
     title: "D'AL Interior",
-    description: "Premium Curtain & Interior Solution",
+    description:
+      "Premium Curtain & Interior Solution untuk rumah, kantor, hotel, apartemen, dan rumah sakit.",
 
-    url: "https://dalinterior.com",
+    url: "/",
 
     siteName: "D'AL Interior",
 
     locale: "id_ID",
 
     type: "website",
+
+    images: [
+      {
+        url: "/og-image.jpg",
+        width: 1200,
+        height: 630,
+        alt: "D'AL Interior",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "D'AL Interior",
+    description:
+      "Premium Curtain & Interior Solution untuk rumah, kantor, hotel, apartemen, dan rumah sakit.",
+    images: ["/og-image.jpg"],
+  },
+
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
 };
 
