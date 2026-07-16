@@ -1,0 +1,100 @@
+import { Product } from "@/types/product";
+
+export const featuredProducts: Product[] = [
+  {
+    id: 1,
+    slug: "bracket-super-tebal",
+    title: "Bracket Gorden Super Tebal",
+    image: "/images/products/bracket.jpg",
+    gallery: [
+      "/images/products/bracket.jpg",
+      "/images/products/bracket01.jpg",
+      "/images/products/bracket02.jpg",
+      "/images/products/bracket03.jpg",
+      "/images/products/bracket04.jpg",
+      "/images/products/bracket05.jpg",
+      "/images/products/bracket06.jpg",
+    ],
+    price: 20000,
+    comparePrice: 29000,
+    rating: 4.9,
+    reviewCount: 325,
+    category: "Bracket",
+    badge: "Best Seller",
+    isFeatured: true,
+
+    description:
+      "Bracket gorden premium berbahan besi tebal yang dirancang untuk menopang gorden heavy duty. Cocok digunakan pada rumah, hotel, kantor, apartemen maupun proyek komersial.",
+
+    specifications: {
+      material: "Besi Tebal",
+      color: "Hitam / Putih",
+      thickness: "1.4 mm",
+      warranty: "1 Tahun",
+    },
+
+    reviews: [
+      {
+        id: 1,
+        author: "Andi",
+        city: "Bandung",
+        rating: 5,
+        comment:
+          "Bracket sangat kokoh, packing rapi, kualitas sesuai ekspektasi.",
+      },
+      {
+        id: 2,
+        author: "Rina",
+        city: "Jakarta",
+        rating: 5,
+        comment: "Barang premium, pemasangan mudah dan finishing bagus.",
+      },
+      {
+        id: 3,
+        author: "Budi",
+        city: "Surabaya",
+        rating: 5,
+        comment: "Sudah beli berkali-kali untuk proyek, selalu memuaskan.",
+      },
+    ],
+  },
+  {
+    id: 2,
+    slug: "hook-mawar",
+    title: "Hook Gorden Mawar",
+    image: "/images/products/hook.jpg",
+    price: 10000,
+    comparePrice: 15000,
+    rating: 5,
+    reviewCount: 96,
+    category: "Hook",
+    badge: "New",
+    isFeatured: true,
+  },
+  {
+    id: 3,
+    slug: "rel-premium",
+    title: "Rel Gorden Premium",
+    image: "/images/products/rel.jpg",
+    price: 185000,
+    comparePrice: 250000,
+    rating: 4.9,
+    reviewCount: 210,
+    category: "Rel",
+    badge: "Promo",
+    isFeatured: true,
+  },
+  {
+    id: 4,
+    slug: "endcap-premium",
+    title: "Endcap Minimalis Premium",
+    image: "/images/products/endcap.jpg",
+    price: 20000,
+    comparePrice: 30000,
+    rating: 4.8,
+    reviewCount: 180,
+    category: "Aksesoris",
+    badge: "Sale",
+    isFeatured: true,
+  },
+];
